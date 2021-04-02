@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/aboutus"
+        android:layout_width="317dp"
+        android:layout_height="180dp"
+        android:fontFamily="monospace"
+        android:text="The app was developped by:\nDiab Jason\nFarah Peter\nSaab Anthony\n for the EECE451 project at the American University of Beirut\n \nSpecial thanks to Dr. Abdel Karim Ajami and instructor Ali l Hussein"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

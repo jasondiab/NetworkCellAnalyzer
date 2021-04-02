@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/realtimeview"
+        android:layout_width="362dp"
+        android:layout_height="189dp"
+        android:fontFamily="monospace"
+        android:text="Retrieve the following information:\n\n> Operator\n> Signal Power\n> SINR/SNR\n> Network Type\n> Frequency Band\n> Cell ID\n> Time Stamp"
+        android:textColor="#BBC4F1"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/realtimebutton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8A91D8"
+        android:text="  _Get Data"
+        android:textAlignment="viewStart"
+        android:textColor="#0E0E0E" />
+
+</LinearLayout>

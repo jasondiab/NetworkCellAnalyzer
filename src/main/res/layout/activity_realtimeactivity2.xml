@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:foregroundTint="#69F0AE"
+    tools:context=".realtimeactivity">
+
+    <TextView
+        android:id="@+id/operatorText"
+        android:layout_width="306dp"
+        android:layout_height="23dp"
+        android:fontFamily="monospace"
+        android:hint="Operator Name: "
+        android:textColor="#BBC4F1"
+        android:textColorHighlight="#BBC4F1"
+        android:textColorHint="#BBC4F1"
+        android:textColorLink="#BBC4F1"
+        app:layout_constraintBottom_toTopOf="@+id/refresher"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <TextView
+        android:id="@+id/powerText"
+        android:layout_width="306dp"
+        android:layout_height="23dp"
+        android:fontFamily="monospace"
+        android:hint="Power in dBm: "
+        android:textColor="#BBC4F1"
+        android:textColorHighlight="#BBC4F1"
+        android:textColorHint="#BBC4F1"
+        android:textColorLink="#BBC4F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operatorText"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/snrText"
+        android:layout_width="306dp"
+        android:layout_height="23dp"
+        android:fontFamily="monospace"
+        android:hint="SNR in dB: "
+        android:textColor="#BBC4F1"
+        android:textColorHighlight="#BBC4F1"
+        android:textColorHint="#BBC4F1"
+        android:textColorLink="#BBC4F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/powerText"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/frequencyText"
+        android:layout_width="306dp"
+        android:layout_height="23dp"
+        android:fontFamily="monospace"
+        android:hint="Channel Band:"
+        android:textColor="#BBC4F1"
+        android:textColorHighlight="#BBC4F1"
+        android:textColorHint="#BBC4F1"
+        android:textColorLink="#BBC4F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/networkText"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/networkText"
+        android:layout_width="306dp"
+        android:layout_height="23dp"
+        android:fontFamily="monospace"
+        android:hint="Network Type: "
+        android:textColor="#BBC4F1"
+        android:textColorHighlight="#BBC4F1"
+        android:textColorHint="#BBC4F1"
+        android:textColorLink="#BBC4F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snrText"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/cellidText"
+        android:layout_width="306dp"
+        android:layout_height="23dp"
+        android:fontFamily="monospace"
+        android:hint="Cell ID/IDs:"
+        android:textColor="#BBC4F1"
+        android:textColorHighlight="#BBC4F1"
+        android:textColorHint="#BBC4F1"
+        android:textColorLink="#BBC4F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frequencyText"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="306dp"
+        android:layout_height="23dp"
+        android:fontFamily="monospace"
+        android:hint="Time Stamp:"
+        android:textColor="#BBC4F1"
+        android:textColorHighlight="#BBC4F1"
+        android:textColorHint="#BBC4F1"
+        android:textColorLink="#BBC4F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cellidText"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/refresher"
+        android:layout_width="147dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#8A91D8"
+        android:fontFamily="monospace"
+        android:onClick="refresh"
+        android:text="_Refresh "
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="407dp"
+        android:layout_height="131dp"
+        android:background="@drawable/logoonly"
+        app:layout_constraintBottom_toTopOf="@+id/operatorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
